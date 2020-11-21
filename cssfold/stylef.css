@@ -1,0 +1,211 @@
+/* css reset */
+html{
+    scroll-behavior: smooth;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+    top: 0px;
+    
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+   height: 59px;
+   margin: 3px 6px;
+}
+.navbar ul{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+.navbar ul li a{
+    color:white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: black;
+   background-color: white;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 540px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../image_food/logo.jpg') no-repeat center center/cover;
+    height: 640px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+/* utility classes */
+.h-primary{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 12px;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+.btn{
+    padding: 6px 16px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+/* services container */
+.center{
+    text-align: center;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: -27px 48px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+
+}
+#services .box img{
+    height: 156px;
+    width: 170px;
+    margin: auto;
+    display: block;
+
+}
+#services .box p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* clients section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#clients img{
+   height: 126px;
+}
+.client-section{
+    position: relative;
+    /* height: 368px; */
+    margin-bottom: 7px;
+}
+.client-item{
+    padding: 34px;
+    /* margin-left: 40px; */
+}
+.client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../image_food/clientlogo\ \(1\).jpg') no-repeat center/cover;
+    width: 100%;
+    height: 102%;
+    z-index: -1;
+    opacity: 1;
+
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+background: url('../image_food/contact.jpg') no-repeat center center/cover;    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.1rem;
+
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
